@@ -38,7 +38,7 @@
 
   <target name="compile" depends="prepare"
     description="Compiles the source code">
-    <javac srcdir="${src.dir}"
+    <javac srcdir="${src.dir}/project;${src.dir}/door"
            destdir="${build.dir}"
            debug="${build.debug}"
            includeantruntime="false">
